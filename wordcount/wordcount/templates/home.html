@@ -1,0 +1,18 @@
+<style>
+	h1{
+		font-size:100px;
+		color: green;
+		font-family: sans-serif;
+		}
+
+</style>
+<h1>안현준의 Word Count</h1>
+
+<a href="{% url 'about' %}">ABOUT</a>
+<a href="{% url 'count' %}">COUNT</a>
+
+<form action="/count">
+	<textarea cols="40" rows="10" name="fulltext"></textarea>
+	<hr>
+	<input type="submit" value="Count!" />
+</form>
